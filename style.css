@@ -335,3 +335,80 @@ form .linkTxt{
 .info-text .animation{
     color: white !important;
 }
+
+/*Media Querries*/
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .wrapper .form-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .wrapper .info-text {
+        display: none; /* Hide the info text on smaller screens */
+    }
+
+    .wrapper .form-box.login,
+    .wrapper .form-box.register {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .form-box h2 {
+        font-size: 28px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    form button {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px 10px;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding-right: 18px;
+    }
+
+    form button {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .linkTxt p {
+        font-size: 12px;
+    }
+}
+
+/* Adjust Form Boxes and Rotate Backgrounds for Small Screens */
+@media (max-width: 1024px) {
+    .wrapper .rotate-bg,
+    .wrapper .rotate-bg2 {
+        display: none; /* Hide rotating backgrounds for smaller screens */
+    }
+
+    .form-box {
+        padding: 10px 20px;
+    }
+}
+
