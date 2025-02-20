@@ -251,12 +251,6 @@ form .linkTxt{
 
 
 
-
-
-
-
-
-
 .wrapper .form-box.register{
     padding: 0 40px 0 60px;
     right: 0;
@@ -336,8 +330,8 @@ form .linkTxt{
     color: white !important;
 }
 
-/*Media Querries*/
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .wrapper {
         width: 95%;
@@ -354,7 +348,9 @@ form .linkTxt{
         display: none; /* Hide the info text on smaller screens */
     }
 
-    .wrapper .form-box.login,
+    .wrapper .form-box.login{
+        padding: 0 40px;
+    }
     .wrapper .form-box.register {
         position: static;
         transform: none;
@@ -401,7 +397,7 @@ form .linkTxt{
 }
 
 /* Adjust Form Boxes and Rotate Backgrounds for Small Screens */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .wrapper .rotate-bg,
     .wrapper .rotate-bg2 {
         display: none; /* Hide rotating backgrounds for smaller screens */
@@ -411,4 +407,3 @@ form .linkTxt{
         padding: 10px 20px;
     }
 }
-
